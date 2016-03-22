@@ -1,0 +1,172 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PokeDetailVC"
+provides-nominal:
+- "C18PokeDex_by_Kailash12PokeDetailVC"
+provides-member:
+- ["C18PokeDex_by_Kailash12PokeDetailVC", ""]
+provides-dynamic-lookup:
+- "viewDidAppear"
+- "name"
+depends-top-level:
+- "PokeDetailVC"
+- "Bool"
+- "UILabel"
+- "UIViewController"
+- "Pokemon"
+depends-member:
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "name"]
+- ["PSs9AnyObject", "pokemon"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", "viewDidAppear"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "name"]
+- ["PSs11CVarArgType", "pokemon"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", "viewDidAppear"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "name"]
+- ["PSs23CustomStringConvertible", "pokemon"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "name"]
+- ["PSs9Equatable", "pokemon"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", "viewDidAppear"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "name"]
+- ["PSs8Hashable", "pokemon"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", "viewDidAppear"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "name"]
+- ["PSo8NSCoding", "pokemon"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "viewDidAppear"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "name"]
+- ["PSo26NSExtensionRequestHandling", "pokemon"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Pokemon"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "pokemon"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidAppear"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "pokemon"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "Bool"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "Pokemon"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "UILabel"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "deinit"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "init"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "name"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "pokemon"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "viewDidAppear"]
+- !private ["C18PokeDex_by_Kailash7Pokemon", "name"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "name"]
+- ["PSo21UIAppearanceContainer", "pokemon"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "name"]
+- ["PSo18UIContentContainer", "pokemon"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "name"]
+- ["PSo18UIFocusEnvironment", "pokemon"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "Pokemon"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "name"]
+- ["CSo11UIResponder", "pokemon"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidAppear"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "name"]
+- ["PSo16UIStateRestoring", "pokemon"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "name"]
+- ["PSo18UITraitEnvironment", "pokemon"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "Pokemon"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "name"]
+- ["CSo16UIViewController", "pokemon"]
+- ["CSo16UIViewController", "viewDidAppear"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs12_Reflectable", "text"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C18PokeDex_by_Kailash12PokeDetailVC"
+- !private "C18PokeDex_by_Kailash7Pokemon"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+interface-hash: "80c6b8630edd870f5752eb7f7f4496e2"

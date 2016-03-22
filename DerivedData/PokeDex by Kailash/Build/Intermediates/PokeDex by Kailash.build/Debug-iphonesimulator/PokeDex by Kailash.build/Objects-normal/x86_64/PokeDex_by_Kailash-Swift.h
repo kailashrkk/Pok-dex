@@ -87,6 +87,7 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -107,13 +108,56 @@ SWIFT_CLASS("_TtC18PokeDex_by_Kailash11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
 @class NSCoder;
+@class UIImageView;
+@class UILabel;
+
+SWIFT_CLASS("_TtC18PokeDex_by_Kailash8PokeCell")
+@interface PokeCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified thumbImage;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified pokeName;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSBundle;
+
+SWIFT_CLASS("_TtC18PokeDex_by_Kailash12PokeDetailVC")
+@interface PokeDetailVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified name;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class AVAudioPlayer;
+@class UICollectionView;
+@class NSIndexPath;
+@class UICollectionViewLayout;
+@class UITouch;
+@class UIEvent;
+@class UIButton;
+@class UISearchBar;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC18PokeDex_by_Kailash14ViewController")
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
+@property (nonatomic, weak) IBOutlet UISearchBar * __null_unspecified searchBar;
+@property (nonatomic, weak) IBOutlet UICollectionView * __null_unspecified collection;
+@property (nonatomic, strong) AVAudioPlayer * __null_unspecified musicPlayer;
+@property (nonatomic) BOOL isSearchOn;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)parseCSV;
+- (void)prepareAndPlayAudio;
+- (UICollectionViewCell * __nonnull)collectionView:(UICollectionView * __nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)collectionView:(UICollectionView * __nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (NSInteger)collectionView:(UICollectionView * __nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * __nonnull)collectionView;
+- (CGSize)collectionView:(UICollectionView * __nonnull)collectionView layout:(UICollectionViewLayout * __nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (BOOL)prefersStatusBarHidden;
+- (void)touchesBegan:(NSSet<UITouch *> * __nonnull)touches withEvent:(UIEvent * __nullable)event;
+- (IBAction)musicButtonPressed:(UIButton * __nonnull)sender;
+- (void)searchBar:(UISearchBar * __nonnull)searchBar textDidChange:(NSString * __nonnull)searchText;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
