@@ -6,142 +6,462 @@ provides-nominal:
 provides-member:
 - ["C18PokeDex_by_Kailash12PokeDetailVC", ""]
 provides-dynamic-lookup:
+- "evoLbl"
+- "pokeImg"
 - "name"
+- "typeLbl"
+- "mainImg"
+- "movesLbl"
+- "backPressed"
 - "viewDidAppear"
+- "evoImg"
+- "weaknessLbl"
 depends-top-level:
+- "UIButton"
 - "UILabel"
-- "PokeDetailVC"
-- "Bool"
+- !private "BooleanLiteralType"
 - "Pokemon"
+- "Bool"
+- "UIImageView"
+- !private "StringLiteralType"
 - "UIViewController"
+- !private "UIImage"
+- "PokeDetailVC"
 depends-member:
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "name"]
-- ["PSs9AnyObject", "pokemon"]
-- !private ["PSs9AnyObject", "text"]
-- ["PSs9AnyObject", "viewDidAppear"]
-- ["PSs9AnyObject", ""]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "name"]
-- ["PSs11CVarArgType", "pokemon"]
-- !private ["PSs11CVarArgType", "text"]
-- ["PSs11CVarArgType", "viewDidAppear"]
-- ["PSs11CVarArgType", ""]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "name"]
-- ["PSs23CustomStringConvertible", "pokemon"]
-- !private ["PSs23CustomStringConvertible", "text"]
-- ["PSs23CustomStringConvertible", "viewDidAppear"]
-- ["PSs23CustomStringConvertible", ""]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "name"]
-- ["PSs9Equatable", "pokemon"]
-- !private ["PSs9Equatable", "text"]
-- ["PSs9Equatable", "viewDidAppear"]
-- ["PSs9Equatable", ""]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "name"]
-- ["PSs8Hashable", "pokemon"]
-- !private ["PSs8Hashable", "text"]
-- ["PSs8Hashable", "viewDidAppear"]
-- ["PSs8Hashable", ""]
+- !private ["Ps9AnyObject", "UIImage"]
+- ["Ps9AnyObject", "backPressed"]
+- !private ["Ps9AnyObject", "capitalizedString"]
+- !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
+- !private ["Ps9AnyObject", "downloadPokemonDetails"]
+- ["Ps9AnyObject", "evoImg"]
+- ["Ps9AnyObject", "evoLbl"]
+- !private ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "mainImg"]
+- ["Ps9AnyObject", "movesLbl"]
+- ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "pokeDex"]
+- ["Ps9AnyObject", "pokeImg"]
+- ["Ps9AnyObject", "pokemon"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "typeLbl"]
+- ["Ps9AnyObject", "viewDidAppear"]
+- ["Ps9AnyObject", "weaknessLbl"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "deinit"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- ["Ps11CVarArgType", "backPressed"]
+- !private ["Ps11CVarArgType", "capitalizedString"]
+- !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
+- ["Ps11CVarArgType", "evoImg"]
+- ["Ps11CVarArgType", "evoLbl"]
+- !private ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "mainImg"]
+- ["Ps11CVarArgType", "movesLbl"]
+- ["Ps11CVarArgType", "name"]
+- ["Ps11CVarArgType", "pokeImg"]
+- ["Ps11CVarArgType", "pokemon"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "typeLbl"]
+- ["Ps11CVarArgType", "viewDidAppear"]
+- ["Ps11CVarArgType", "weaknessLbl"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "capitalizedString"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- ["Ps28CustomDebugStringConvertible", "backPressed"]
+- !private ["Ps28CustomDebugStringConvertible", "capitalizedString"]
+- !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
+- ["Ps28CustomDebugStringConvertible", "evoImg"]
+- ["Ps28CustomDebugStringConvertible", "evoLbl"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "mainImg"]
+- ["Ps28CustomDebugStringConvertible", "movesLbl"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "pokeImg"]
+- ["Ps28CustomDebugStringConvertible", "pokemon"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "typeLbl"]
+- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
+- ["Ps28CustomDebugStringConvertible", "weaknessLbl"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- ["Ps23CustomStringConvertible", "backPressed"]
+- !private ["Ps23CustomStringConvertible", "capitalizedString"]
+- !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
+- ["Ps23CustomStringConvertible", "evoImg"]
+- ["Ps23CustomStringConvertible", "evoLbl"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "mainImg"]
+- ["Ps23CustomStringConvertible", "movesLbl"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "pokeImg"]
+- ["Ps23CustomStringConvertible", "pokemon"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "typeLbl"]
+- ["Ps23CustomStringConvertible", "viewDidAppear"]
+- ["Ps23CustomStringConvertible", "weaknessLbl"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "UIImage"]
+- ["Ps9Equatable", "backPressed"]
+- !private ["Ps9Equatable", "capitalizedString"]
+- !private ["Ps9Equatable", "dismissViewControllerAnimated"]
+- ["Ps9Equatable", "evoImg"]
+- ["Ps9Equatable", "evoLbl"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "mainImg"]
+- ["Ps9Equatable", "movesLbl"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "pokeImg"]
+- ["Ps9Equatable", "pokemon"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "typeLbl"]
+- ["Ps9Equatable", "viewDidAppear"]
+- ["Ps9Equatable", "weaknessLbl"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "capitalizedString"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "UIImage"]
+- ["Ps8Hashable", "backPressed"]
+- !private ["Ps8Hashable", "capitalizedString"]
+- !private ["Ps8Hashable", "dismissViewControllerAnimated"]
+- ["Ps8Hashable", "evoImg"]
+- ["Ps8Hashable", "evoLbl"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "mainImg"]
+- ["Ps8Hashable", "movesLbl"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "pokeImg"]
+- ["Ps8Hashable", "pokemon"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "typeLbl"]
+- ["Ps8Hashable", "viewDidAppear"]
+- ["Ps8Hashable", "weaknessLbl"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "capitalizedString"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "UIImage"]
+- ["PSo8NSCoding", "backPressed"]
+- !private ["PSo8NSCoding", "capitalizedString"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- ["PSo8NSCoding", "evoImg"]
+- ["PSo8NSCoding", "evoLbl"]
+- !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "mainImg"]
+- ["PSo8NSCoding", "movesLbl"]
 - ["PSo8NSCoding", "name"]
+- ["PSo8NSCoding", "pokeImg"]
 - ["PSo8NSCoding", "pokemon"]
 - !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "typeLbl"]
 - ["PSo8NSCoding", "viewDidAppear"]
+- ["PSo8NSCoding", "weaknessLbl"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "capitalizedString"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- ["PSo26NSExtensionRequestHandling", "backPressed"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "evoImg"]
+- ["PSo26NSExtensionRequestHandling", "evoLbl"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "mainImg"]
+- ["PSo26NSExtensionRequestHandling", "movesLbl"]
 - ["PSo26NSExtensionRequestHandling", "name"]
+- ["PSo26NSExtensionRequestHandling", "pokeImg"]
 - ["PSo26NSExtensionRequestHandling", "pokemon"]
+- ["PSo26NSExtensionRequestHandling", "typeLbl"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
+- ["PSo26NSExtensionRequestHandling", "weaknessLbl"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "capitalizedString"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "Pokemon"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "backPressed"]
+- !private ["CSo8NSObject", "capitalizedString"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- ["CSo8NSObject", "evoImg"]
+- ["CSo8NSObject", "evoLbl"]
+- !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "mainImg"]
+- ["CSo8NSObject", "movesLbl"]
 - ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "pokeImg"]
 - ["CSo8NSObject", "pokemon"]
 - !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "typeLbl"]
 - ["CSo8NSObject", "viewDidAppear"]
+- ["CSo8NSObject", "weaknessLbl"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- ["PSo16NSObjectProtocol", "backPressed"]
+- !private ["PSo16NSObjectProtocol", "capitalizedString"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- ["PSo16NSObjectProtocol", "evoImg"]
+- ["PSo16NSObjectProtocol", "evoLbl"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "mainImg"]
+- ["PSo16NSObjectProtocol", "movesLbl"]
 - ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "pokeImg"]
 - ["PSo16NSObjectProtocol", "pokemon"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "typeLbl"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
+- ["PSo16NSObjectProtocol", "weaknessLbl"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "capitalizedString"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "capitalizedString"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps16OutputStreamType", "capitalizedString"]
+- !private ["Ps16OutputStreamType", "init"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "Bool"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "Pokemon"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "UIButton"]
+- !private ["C18PokeDex_by_Kailash12PokeDetailVC", "UIImage"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "UIImageView"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "UILabel"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "backPressed"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "deinit"]
+- !private ["C18PokeDex_by_Kailash12PokeDetailVC", "dismissViewControllerAnimated"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "evoImg"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "evoLbl"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "init"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "mainImg"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "movesLbl"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "name"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "pokeImg"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "pokemon"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "typeLbl"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "viewDidAppear"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "weaknessLbl"]
+- !private ["C18PokeDex_by_Kailash7Pokemon", "downloadPokemonDetails"]
 - !private ["C18PokeDex_by_Kailash7Pokemon", "name"]
+- !private ["C18PokeDex_by_Kailash7Pokemon", "pokeDex"]
+- !private ["Ps10Streamable", "capitalizedString"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "capitalizedString"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "capitalizedString"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "capitalizedString"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- ["PSo21UIAppearanceContainer", "backPressed"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "evoImg"]
+- ["PSo21UIAppearanceContainer", "evoLbl"]
+- !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "mainImg"]
+- ["PSo21UIAppearanceContainer", "movesLbl"]
 - ["PSo21UIAppearanceContainer", "name"]
+- ["PSo21UIAppearanceContainer", "pokeImg"]
 - ["PSo21UIAppearanceContainer", "pokemon"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "typeLbl"]
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
+- ["PSo21UIAppearanceContainer", "weaknessLbl"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- ["PSo18UIContentContainer", "backPressed"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "evoImg"]
+- ["PSo18UIContentContainer", "evoLbl"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "mainImg"]
+- ["PSo18UIContentContainer", "movesLbl"]
 - ["PSo18UIContentContainer", "name"]
+- ["PSo18UIContentContainer", "pokeImg"]
 - ["PSo18UIContentContainer", "pokemon"]
+- ["PSo18UIContentContainer", "typeLbl"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
+- ["PSo18UIContentContainer", "weaknessLbl"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- ["PSo18UIFocusEnvironment", "backPressed"]
+- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UIFocusEnvironment", "evoImg"]
+- ["PSo18UIFocusEnvironment", "evoLbl"]
+- !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "mainImg"]
+- ["PSo18UIFocusEnvironment", "movesLbl"]
 - ["PSo18UIFocusEnvironment", "name"]
+- ["PSo18UIFocusEnvironment", "pokeImg"]
 - ["PSo18UIFocusEnvironment", "pokemon"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "typeLbl"]
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
+- ["PSo18UIFocusEnvironment", "weaknessLbl"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "Pokemon"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "backPressed"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- ["CSo11UIResponder", "evoImg"]
+- ["CSo11UIResponder", "evoLbl"]
+- !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "mainImg"]
+- ["CSo11UIResponder", "movesLbl"]
 - ["CSo11UIResponder", "name"]
+- ["CSo11UIResponder", "pokeImg"]
 - ["CSo11UIResponder", "pokemon"]
 - !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "typeLbl"]
 - ["CSo11UIResponder", "viewDidAppear"]
+- ["CSo11UIResponder", "weaknessLbl"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- ["PSo16UIStateRestoring", "backPressed"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "evoImg"]
+- ["PSo16UIStateRestoring", "evoLbl"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "mainImg"]
+- ["PSo16UIStateRestoring", "movesLbl"]
 - ["PSo16UIStateRestoring", "name"]
+- ["PSo16UIStateRestoring", "pokeImg"]
 - ["PSo16UIStateRestoring", "pokemon"]
+- ["PSo16UIStateRestoring", "typeLbl"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
+- ["PSo16UIStateRestoring", "weaknessLbl"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- ["PSo18UITraitEnvironment", "backPressed"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "evoImg"]
+- ["PSo18UITraitEnvironment", "evoLbl"]
+- !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "mainImg"]
+- ["PSo18UITraitEnvironment", "movesLbl"]
 - ["PSo18UITraitEnvironment", "name"]
+- ["PSo18UITraitEnvironment", "pokeImg"]
 - ["PSo18UITraitEnvironment", "pokemon"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "typeLbl"]
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
+- ["PSo18UITraitEnvironment", "weaknessLbl"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "Pokemon"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "backPressed"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- ["CSo16UIViewController", "evoImg"]
+- ["CSo16UIViewController", "evoLbl"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "mainImg"]
+- ["CSo16UIViewController", "movesLbl"]
 - ["CSo16UIViewController", "name"]
+- ["CSo16UIViewController", "pokeImg"]
 - ["CSo16UIViewController", "pokemon"]
+- ["CSo16UIViewController", "typeLbl"]
 - ["CSo16UIViewController", "viewDidAppear"]
+- ["CSo16UIViewController", "weaknessLbl"]
 - ["CSo16UIViewController", ""]
-- !private ["PSs12_Reflectable", "text"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "capitalizedString"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "capitalizedString"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "capitalizedString"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "capitalizedString"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "capitalizedString"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "capitalizedString"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "capitalizedString"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "capitalizedString"]
+- !private ["Ps12_Reflectable", "image"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "text"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16OutputStreamType"
 - "C18PokeDex_by_Kailash12PokeDetailVC"
 - !private "C18PokeDex_by_Kailash7Pokemon"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -149,13 +469,29 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "PSs12_Reflectable"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -169,4 +505,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "80c6b8630edd870f5752eb7f7f4496e2"
+- "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
+interface-hash: "d06d1fa9a8b378a8babb9f8d2804717d"

@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "99ca28e664bd6199ce0a4d422762a441"
+build_time: [512500995, 636922000]
+inputs:
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Alamofire.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Download.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Error.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Manager.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/MultipartFormData.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Notifications.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/ParameterEncoding.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Request.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Response.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/ResponseSerialization.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Result.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/ServerTrustPolicy.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Stream.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Timeline.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Upload.swift": [512498908, 0]
+  "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/Pods/Alamofire/Source/Validation.swift": [512498908, 0]
