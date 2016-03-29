@@ -9,14 +9,14 @@ provides-dynamic-lookup:
 - "pokeName"
 - "thumbImage"
 depends-top-level:
+- "UICollectionViewCell"
+- "Pokemon"
+- "UILabel"
 - !private "UIImage"
+- !private "StringLiteralType"
+- "PokeCell"
 - "UIImageView"
 - "NSCoder"
-- "Pokemon"
-- "UICollectionViewCell"
-- "UILabel"
-- "PokeCell"
-- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "capitalizedString"]

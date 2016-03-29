@@ -139,7 +139,9 @@ SWIFT_CLASS("_TtC18PokeDex_by_Kailash12PokeDetailVC")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified evoImg;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainImg;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)updateUI;
 - (IBAction)backPressed:(UIButton * _Nonnull)sender;
+- (BOOL)prefersStatusBarHidden;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

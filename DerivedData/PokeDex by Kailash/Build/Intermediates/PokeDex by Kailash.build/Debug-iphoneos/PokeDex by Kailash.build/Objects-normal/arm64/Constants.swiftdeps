@@ -7,9 +7,9 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "StringLiteralType"
 - "BASE_URL"
 - "DownloadComplete"
-- "StringLiteralType"
 - "POKE_URL"
 depends-member:
 depends-nominal:
@@ -30,4 +30,4 @@ depends-external:
 - "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "2e07b985f049774a2dff38cafbb53624"
+interface-hash: "9ef61b75ecba0b33fb506621a8926761"

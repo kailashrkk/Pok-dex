@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers",
+      'name': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Alamofire-Swift.h",
-          'external-contents': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+          'external-contents': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
         },
         {
           'type': 'file',
@@ -20,18 +20,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules",
+      'name': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
+          'external-contents': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphonesimulator/Pods_PokeDex_by_Kailash.framework/Headers",
+      'name': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Pods_PokeDex_by_Kailash.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -41,18 +41,18 @@
         {
           'type': 'file',
           'name': "Pods_PokeDex_by_Kailash-Swift.h",
-          'external-contents': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphonesimulator/Pods_PokeDex_by_Kailash.framework/Headers/Pods_PokeDex_by_Kailash-Swift.h"
+          'external-contents': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Pods_PokeDex_by_Kailash.framework/Headers/Pods_PokeDex_by_Kailash-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphonesimulator/Pods_PokeDex_by_Kailash.framework/Modules",
+      'name': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Pods_PokeDex_by_Kailash.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-PokeDex by Kailash.build/module.modulemap"
+          'external-contents': "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-PokeDex by Kailash.build/module.modulemap"
         }
       ]
     }

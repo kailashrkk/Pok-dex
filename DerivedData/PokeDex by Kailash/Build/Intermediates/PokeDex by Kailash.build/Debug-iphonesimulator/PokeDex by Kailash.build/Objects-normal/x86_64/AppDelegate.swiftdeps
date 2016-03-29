@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C18PokeDex_by_Kailash11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
-- "applicationDidBecomeActive"
-- "applicationWillResignActive"
+- "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
 - "applicationWillTerminate"
-- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "application"
+- "applicationDidBecomeActive"
 - "window"
 depends-top-level:
-- "AnyObject"
-- !private "BooleanLiteralType"
-- "Bool"
-- "NSObject"
-- "UIApplication"
-- "UIApplicationDelegate"
 - "UIResponder"
-- "UIWindow"
+- "UIApplicationDelegate"
+- !private "BooleanLiteralType"
 - "AppDelegate"
+- "UIWindow"
+- "Bool"
+- "UIApplication"
+- "AnyObject"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

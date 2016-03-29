@@ -26,11 +26,29 @@ class PokeDetailVC: UIViewController {
         mainImg.image = UIImage(named: "\(pokemon.pokeDex)")
         
         pokemon.downloadPokemonDetails { 
-            
+            self.updateUI()
         }
+    }
+    
+    func updateUI(){
+        typeLbl.text = pokemon.typeLbl
+        weaknessLbl.text = pokemon.weakness
+        evoLbl.text = pokemon.evoLbl
+        
+        if pokemon.evoPokeDex == "XXX"{
+        evoImg.hidden = true
+        } else{
+        evoImg.hidden = false
+        evoImg.image = UIImage(named: "\(pokemon.evoPokeDex)")
+        }
+        movesLbl.text = pokemon.moves
     }
     
     @IBAction func backPressed(sender: UIButton){
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 }

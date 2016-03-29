@@ -6,26 +6,29 @@ provides-nominal:
 provides-member:
 - ["C18PokeDex_by_Kailash12PokeDetailVC", ""]
 provides-dynamic-lookup:
-- "evoLbl"
-- "pokeImg"
-- "name"
-- "typeLbl"
-- "mainImg"
-- "movesLbl"
-- "backPressed"
-- "viewDidAppear"
 - "evoImg"
+- "viewDidAppear"
+- "prefersStatusBarHidden"
+- "updateUI"
+- "typeLbl"
+- "pokeImg"
 - "weaknessLbl"
+- "name"
+- "backPressed"
+- "evoLbl"
+- "movesLbl"
+- "mainImg"
 depends-top-level:
-- "UIButton"
 - "UILabel"
-- !private "BooleanLiteralType"
-- "Pokemon"
 - "Bool"
-- "UIImageView"
+- !private "=="
+- "UIButton"
 - !private "StringLiteralType"
 - "UIViewController"
+- "Pokemon"
 - !private "UIImage"
+- "UIImageView"
+- !private "BooleanLiteralType"
 - "PokeDetailVC"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
@@ -35,26 +38,36 @@ depends-member:
 - !private ["Ps9AnyObject", "downloadPokemonDetails"]
 - ["Ps9AnyObject", "evoImg"]
 - ["Ps9AnyObject", "evoLbl"]
+- !private ["Ps9AnyObject", "evoPokeDex"]
+- !private ["Ps9AnyObject", "hidden"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "mainImg"]
+- !private ["Ps9AnyObject", "moves"]
 - ["Ps9AnyObject", "movesLbl"]
 - ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "pokeDex"]
 - ["Ps9AnyObject", "pokeImg"]
 - ["Ps9AnyObject", "pokemon"]
+- ["Ps9AnyObject", "prefersStatusBarHidden"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "typeLbl"]
+- ["Ps9AnyObject", "updateUI"]
 - ["Ps9AnyObject", "viewDidAppear"]
+- !private ["Ps9AnyObject", "weakness"]
 - ["Ps9AnyObject", "weaknessLbl"]
 - ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - ["Ps11CVarArgType", "backPressed"]
 - !private ["Ps11CVarArgType", "capitalizedString"]
 - !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
 - ["Ps11CVarArgType", "evoImg"]
 - ["Ps11CVarArgType", "evoLbl"]
+- !private ["Ps11CVarArgType", "hidden"]
 - !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "mainImg"]
@@ -62,8 +75,10 @@ depends-member:
 - ["Ps11CVarArgType", "name"]
 - ["Ps11CVarArgType", "pokeImg"]
 - ["Ps11CVarArgType", "pokemon"]
+- ["Ps11CVarArgType", "prefersStatusBarHidden"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "typeLbl"]
+- ["Ps11CVarArgType", "updateUI"]
 - ["Ps11CVarArgType", "viewDidAppear"]
 - ["Ps11CVarArgType", "weaknessLbl"]
 - ["Ps11CVarArgType", ""]
@@ -76,6 +91,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
 - ["Ps28CustomDebugStringConvertible", "evoImg"]
 - ["Ps28CustomDebugStringConvertible", "evoLbl"]
+- !private ["Ps28CustomDebugStringConvertible", "hidden"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "mainImg"]
@@ -83,17 +99,21 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "name"]
 - ["Ps28CustomDebugStringConvertible", "pokeImg"]
 - ["Ps28CustomDebugStringConvertible", "pokemon"]
+- ["Ps28CustomDebugStringConvertible", "prefersStatusBarHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "typeLbl"]
+- ["Ps28CustomDebugStringConvertible", "updateUI"]
 - ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "weaknessLbl"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "backPressed"]
 - !private ["Ps23CustomStringConvertible", "capitalizedString"]
 - !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
 - ["Ps23CustomStringConvertible", "evoImg"]
 - ["Ps23CustomStringConvertible", "evoLbl"]
+- !private ["Ps23CustomStringConvertible", "hidden"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "mainImg"]
@@ -101,18 +121,22 @@ depends-member:
 - ["Ps23CustomStringConvertible", "name"]
 - ["Ps23CustomStringConvertible", "pokeImg"]
 - ["Ps23CustomStringConvertible", "pokemon"]
+- ["Ps23CustomStringConvertible", "prefersStatusBarHidden"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "typeLbl"]
+- ["Ps23CustomStringConvertible", "updateUI"]
 - ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "weaknessLbl"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "backPressed"]
 - !private ["Ps9Equatable", "capitalizedString"]
 - !private ["Ps9Equatable", "dismissViewControllerAnimated"]
 - ["Ps9Equatable", "evoImg"]
 - ["Ps9Equatable", "evoLbl"]
+- !private ["Ps9Equatable", "hidden"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "mainImg"]
@@ -120,8 +144,10 @@ depends-member:
 - ["Ps9Equatable", "name"]
 - ["Ps9Equatable", "pokeImg"]
 - ["Ps9Equatable", "pokemon"]
+- ["Ps9Equatable", "prefersStatusBarHidden"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "typeLbl"]
+- ["Ps9Equatable", "updateUI"]
 - ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "weaknessLbl"]
 - ["Ps9Equatable", ""]
@@ -129,11 +155,13 @@ depends-member:
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "backPressed"]
 - !private ["Ps8Hashable", "capitalizedString"]
 - !private ["Ps8Hashable", "dismissViewControllerAnimated"]
 - ["Ps8Hashable", "evoImg"]
 - ["Ps8Hashable", "evoLbl"]
+- !private ["Ps8Hashable", "hidden"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "mainImg"]
@@ -141,8 +169,10 @@ depends-member:
 - ["Ps8Hashable", "name"]
 - ["Ps8Hashable", "pokeImg"]
 - ["Ps8Hashable", "pokemon"]
+- ["Ps8Hashable", "prefersStatusBarHidden"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "typeLbl"]
+- ["Ps8Hashable", "updateUI"]
 - ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "weaknessLbl"]
 - ["Ps8Hashable", ""]
@@ -159,6 +189,7 @@ depends-member:
 - !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - ["PSo8NSCoding", "evoImg"]
 - ["PSo8NSCoding", "evoLbl"]
+- !private ["PSo8NSCoding", "hidden"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "mainImg"]
@@ -166,8 +197,10 @@ depends-member:
 - ["PSo8NSCoding", "name"]
 - ["PSo8NSCoding", "pokeImg"]
 - ["PSo8NSCoding", "pokemon"]
+- ["PSo8NSCoding", "prefersStatusBarHidden"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "typeLbl"]
+- ["PSo8NSCoding", "updateUI"]
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "weaknessLbl"]
 - ["PSo8NSCoding", ""]
@@ -184,7 +217,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "name"]
 - ["PSo26NSExtensionRequestHandling", "pokeImg"]
 - ["PSo26NSExtensionRequestHandling", "pokemon"]
+- ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
 - ["PSo26NSExtensionRequestHandling", "typeLbl"]
+- ["PSo26NSExtensionRequestHandling", "updateUI"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "weaknessLbl"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -201,6 +236,7 @@ depends-member:
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - ["CSo8NSObject", "evoImg"]
 - ["CSo8NSObject", "evoLbl"]
+- !private ["CSo8NSObject", "hidden"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "mainImg"]
@@ -208,8 +244,10 @@ depends-member:
 - ["CSo8NSObject", "name"]
 - ["CSo8NSObject", "pokeImg"]
 - ["CSo8NSObject", "pokemon"]
+- ["CSo8NSObject", "prefersStatusBarHidden"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "typeLbl"]
+- ["CSo8NSObject", "updateUI"]
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "weaknessLbl"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
@@ -218,6 +256,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - ["PSo16NSObjectProtocol", "evoImg"]
 - ["PSo16NSObjectProtocol", "evoLbl"]
+- !private ["PSo16NSObjectProtocol", "hidden"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "mainImg"]
@@ -225,8 +264,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "name"]
 - ["PSo16NSObjectProtocol", "pokeImg"]
 - ["PSo16NSObjectProtocol", "pokemon"]
+- ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "typeLbl"]
+- ["PSo16NSObjectProtocol", "updateUI"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "weaknessLbl"]
 - ["PSo16NSObjectProtocol", ""]
@@ -234,6 +275,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "capitalizedString"]
 - !private ["CSo8NSString", "init"]
+- !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "capitalizedString"]
 - !private ["Ps16OutputStreamType", "init"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "Bool"]
@@ -253,12 +295,19 @@ depends-member:
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "name"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "pokeImg"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "pokemon"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "prefersStatusBarHidden"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "typeLbl"]
+- ["C18PokeDex_by_Kailash12PokeDetailVC", "updateUI"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "viewDidAppear"]
 - ["C18PokeDex_by_Kailash12PokeDetailVC", "weaknessLbl"]
 - !private ["C18PokeDex_by_Kailash7Pokemon", "downloadPokemonDetails"]
+- !private ["C18PokeDex_by_Kailash7Pokemon", "evoLbl"]
+- !private ["C18PokeDex_by_Kailash7Pokemon", "evoPokeDex"]
+- !private ["C18PokeDex_by_Kailash7Pokemon", "moves"]
 - !private ["C18PokeDex_by_Kailash7Pokemon", "name"]
 - !private ["C18PokeDex_by_Kailash7Pokemon", "pokeDex"]
+- !private ["C18PokeDex_by_Kailash7Pokemon", "typeLbl"]
+- !private ["C18PokeDex_by_Kailash7Pokemon", "weakness"]
 - !private ["Ps10Streamable", "capitalizedString"]
 - !private ["Ps10Streamable", "init"]
 - !private ["SS", "capitalizedString"]
@@ -267,9 +316,11 @@ depends-member:
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "capitalizedString"]
 - !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "hidden"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "hidden"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
@@ -277,6 +328,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - ["PSo21UIAppearanceContainer", "evoImg"]
 - ["PSo21UIAppearanceContainer", "evoLbl"]
+- !private ["PSo21UIAppearanceContainer", "hidden"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "mainImg"]
@@ -284,8 +336,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "name"]
 - ["PSo21UIAppearanceContainer", "pokeImg"]
 - ["PSo21UIAppearanceContainer", "pokemon"]
+- ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "typeLbl"]
+- ["PSo21UIAppearanceContainer", "updateUI"]
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "weaknessLbl"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -300,12 +354,16 @@ depends-member:
 - ["PSo18UIContentContainer", "name"]
 - ["PSo18UIContentContainer", "pokeImg"]
 - ["PSo18UIContentContainer", "pokemon"]
+- ["PSo18UIContentContainer", "prefersStatusBarHidden"]
 - ["PSo18UIContentContainer", "typeLbl"]
+- ["PSo18UIContentContainer", "updateUI"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "weaknessLbl"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "hidden"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "hidden"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
@@ -313,6 +371,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UIFocusEnvironment", "evoImg"]
 - ["PSo18UIFocusEnvironment", "evoLbl"]
+- !private ["PSo18UIFocusEnvironment", "hidden"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "mainImg"]
@@ -320,12 +379,15 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "name"]
 - ["PSo18UIFocusEnvironment", "pokeImg"]
 - ["PSo18UIFocusEnvironment", "pokemon"]
+- ["PSo18UIFocusEnvironment", "prefersStatusBarHidden"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "typeLbl"]
+- ["PSo18UIFocusEnvironment", "updateUI"]
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "weaknessLbl"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "hidden"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "Bool"]
@@ -338,6 +400,7 @@ depends-member:
 - !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
 - ["CSo11UIResponder", "evoImg"]
 - ["CSo11UIResponder", "evoLbl"]
+- !private ["CSo11UIResponder", "hidden"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "mainImg"]
@@ -345,8 +408,10 @@ depends-member:
 - ["CSo11UIResponder", "name"]
 - ["CSo11UIResponder", "pokeImg"]
 - ["CSo11UIResponder", "pokemon"]
+- ["CSo11UIResponder", "prefersStatusBarHidden"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "typeLbl"]
+- ["CSo11UIResponder", "updateUI"]
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "weaknessLbl"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
@@ -360,7 +425,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "name"]
 - ["PSo16UIStateRestoring", "pokeImg"]
 - ["PSo16UIStateRestoring", "pokemon"]
+- ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
 - ["PSo16UIStateRestoring", "typeLbl"]
+- ["PSo16UIStateRestoring", "updateUI"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "weaknessLbl"]
 - ["PSo16UIStateRestoring", ""]
@@ -369,6 +436,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UITraitEnvironment", "evoImg"]
 - ["PSo18UITraitEnvironment", "evoLbl"]
+- !private ["PSo18UITraitEnvironment", "hidden"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "mainImg"]
@@ -376,11 +444,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "name"]
 - ["PSo18UITraitEnvironment", "pokeImg"]
 - ["PSo18UITraitEnvironment", "pokemon"]
+- ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "typeLbl"]
+- ["PSo18UITraitEnvironment", "updateUI"]
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "weaknessLbl"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "hidden"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
@@ -399,7 +470,9 @@ depends-member:
 - ["CSo16UIViewController", "name"]
 - ["CSo16UIViewController", "pokeImg"]
 - ["CSo16UIViewController", "pokemon"]
+- ["CSo16UIViewController", "prefersStatusBarHidden"]
 - ["CSo16UIViewController", "typeLbl"]
+- ["CSo16UIViewController", "updateUI"]
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "weaknessLbl"]
 - ["CSo16UIViewController", ""]
@@ -413,6 +486,7 @@ depends-member:
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "capitalizedString"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "capitalizedString"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "capitalizedString"]
@@ -422,15 +496,20 @@ depends-member:
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "capitalizedString"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "capitalizedString"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "capitalizedString"]
+- !private ["Ps12_Reflectable", "hidden"]
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "text"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
 - !private "Ps10Comparable"
@@ -455,6 +534,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "Sq"
 - !private "Ps16OutputStreamType"
 - "C18PokeDex_by_Kailash12PokeDetailVC"
 - !private "C18PokeDex_by_Kailash7Pokemon"
@@ -485,6 +565,7 @@ depends-nominal:
 - !private "P9Alamofire20URLStringConvertible"
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps32_BuiltinStringLiteralConvertible"
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
@@ -509,4 +590,4 @@ depends-external:
 - "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/kailashramaswamykrishnakumar/Documents/PokeDex by Kailash/DerivedData/PokeDex by Kailash/Build/Products/Debug-iphoneos/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "d06d1fa9a8b378a8babb9f8d2804717d"
+interface-hash: "20e203eb0f2946d3f1a8685409ea907b"
